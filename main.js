@@ -178,7 +178,6 @@ ascendingBtn.onclick = () => {
     carsArray.sort(function (a, b) {
         return a.price - b.price;
     });
-    section.innerText = '';
     section.innerHTML = `<h1>BY PRICE (low to high):</h1>`;
     for (var i = 0; i < carsArray.length; i++) {
         section.innerHTML += `<article>
@@ -196,7 +195,6 @@ descendingBtn.onclick = () => {
     carsArray.sort(function (a, b) {
         return b.price - a.price;
     });
-    section.innerText = '';
     section.innerHTML = `<h1>BY PRICE (high to low):</h1>`;
     for (var i = 0; i < carsArray.length; i++) {
         section.innerHTML += `<article>
@@ -239,7 +237,6 @@ alphabeticalBtn.onclick = () => {
         };
         return 0;
     });
-    section.innerText = '';
     section.innerHTML = `<h1>ALPHABETICAL ORDER:</h1>`;
     for (var i = 0; i < carsArray.length; i++) {
         section.innerHTML += `<article>
@@ -257,7 +254,6 @@ dateBtn.onclick = () => {
     carsArray.sort(function (a, b) {
         return a.year - b.year;
     });
-    section.innerText = '';
     section.innerHTML = `<h1>BY DATE:</h1>`;
     for (var i = 0; i < carsArray.length; i++) {
         section.innerHTML += `<article>
